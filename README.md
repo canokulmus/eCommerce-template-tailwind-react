@@ -1,4 +1,3 @@
-# Getting Started with Create React App
 
 A link to my website is https://tailwind-e-commerce.vercel.app/
 
