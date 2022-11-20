@@ -14,7 +14,7 @@ const Navbar = ({ isMenuOpen, toggleMenu }) => {
                 <div className="flex justify-between items-center">
                     <h1 className='font-bold uppercase p-4 border-b border-gray-100'>
                         <a href="/">
-                            <img src="logo2.png" className=' w-52' alt="CO-Tech Logo" />
+                            <img src="logo.png" className=' w-52' alt="CO-Tech Logo" />
                         </a>
                     </h1>
                     <div className="px-4 cursor-pointer md:hidden" onClick={toggleMenu}>
