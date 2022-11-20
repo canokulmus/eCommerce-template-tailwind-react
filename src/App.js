@@ -33,7 +33,7 @@ function App() {
                 isMenuOpen={isMenuOpen}
                 toggleMenu={toggleMenu}
             />
-            <main className='px-6 md:px-16 py-6 bg-gray-100 md:col-span-3 min-h-screen'>
+            <main className=' bg-gray-100 md:col-span-3 min-h-screen'>
                 <Switch>
                     <Route exact path='/'
                         render={(props) => {

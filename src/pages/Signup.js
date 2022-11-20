@@ -1,10 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
+import AccountForm from '../components/AccountForm'
 
 const Signup = () => {
     return (
         <>
-            <Header header={{ sub: "Sign Up" }} />
+            <AccountForm
+                type="signup"
+            />
         </>
     )
 }

@@ -24,7 +24,7 @@ const Navbar = ({ isMenuOpen, toggleMenu }) => {
                     {menu.map(item => {
 
                         return <li className='py-1' key={item.id}>
-                            <Link to={`${item.link}`} className={`px-4 flex justify-end border-r-4 hover:text-primary ${item.active ? "border-primary font-extrabold text-primary" : ""}`}>
+                            <Link to={`${item.link}`} className={`px-4 flex justify-end border-r-4 hover:text-primary ${item.active ? "border-primary font-extrabold text-primary" : "border-white"}`}>
                                 <span>{item.text}</span>
                                 {item.icon}
                             </Link>
