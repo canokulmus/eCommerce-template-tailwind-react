@@ -1,0 +1,67 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Iphone",
+            "price": "999",
+            "description": "Some example description",
+            "image": "/img/iphone.jpg",
+            "discount": 25,
+            "category": "latest"
+        },
+        {
+            "id": 2,
+            "name": "Apple Tech-Set",
+            "price": "3249",
+            "description": "Some example description",
+            "image": "/img/apple2.jpg",
+            "discount": 30,
+            "category": "latest"
+        },
+        {
+            "id": 3,
+            "name": "Lenovo Thinkpad",
+            "price": "1199",
+            "description": "Some example description",
+            "image": "/img/lenovo.jpg",
+            "discount": 18,
+            "category": "latest"
+        },
+        {
+            "id": 4,
+            "name": "Macbook Air",
+            "price": "899",
+            "description": "Some example description",
+            "image": "/img/macbook.jpg",
+            "discount": 23,
+            "category": "popular"
+        },
+        {
+            "id": 5,
+            "name": "Co-Tech Special Set",
+            "price": "2099",
+            "description": "Some example description",
+            "image": "/img/multi.jpg",
+            "discount": 44,
+            "category": "popular"
+        },
+        {
+            "id": 6,
+            "name": "Galaxy S21 Ultra",
+            "price": "1399",
+            "description": "Some example description",
+            "image": "/img/s21.webp",
+            "discount": 12,
+            "category": "popular"
+        },
+        {
+            "id": 7,
+            "name": "Xiaomi 11 Pro",
+            "price": "799",
+            "description": "Some example description",
+            "image": "/img/xiaomi.webp",
+            "discount": 37,
+            "category": "popular"
+        }
+    ]
+}

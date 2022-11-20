@@ -8,7 +8,7 @@
 
 /* reusable components with apply keyword*/
 .card {
-  @apply bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg;
+  @apply bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg hover:cursor-pointer md:hover:-translate-y-2 transition ease-out duration-300;
 }
 
 .badge {
