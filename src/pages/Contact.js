@@ -11,9 +11,7 @@ const Contact = () => {
                         <h1 className="sm:text-3xl text-2xl font-semibold text-center text-sky-600 my-3">Contact Us</h1>
                     </div>
                     <div className="m-7">
-                        <form action="" method="POST" id="form">
-                            <input type="hidden" name="apikey" defaultValue="YOUR_ACCESS_KEY_HERE" />
-                            <input type="hidden" name="subject" defaultValue="New Submission from Web3Forms" />
+                        <form action="" method="" id="form">
                             <input type="checkbox" name="botcheck" style={{ display: 'none' }} />
                             <div className="mb-6">
                                 <label htmlFor="name" className="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
