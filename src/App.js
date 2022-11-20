@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Products from './pages/Products';
 import Product from './pages/Product';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -40,8 +41,11 @@ function App() {
                             return <Home {...props} />
                         }}
                     />
-
-
+                    <Route exact path='/products'
+                        render={(props) => {
+                            return <Products {...props} />
+                        }}
+                    />
                     <Route path='/about'
                         render={(props) => {
                             return <About {...props} />
