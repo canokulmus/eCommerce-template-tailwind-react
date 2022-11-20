@@ -1,40 +1,74 @@
-import React, { useState } from 'react';
-import Popular from './components/Popular';
-import Latest from './components/Latest';
-import Account from './components/Account';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import Header from './components/Header';
+import Home from './pages/Home';
+import Product from './pages/Product';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import { menuAtom } from './atom/menu';
+import { useAtom } from 'jotai';
+import { activateMenu } from './atom/menu';
+
+//import react router dom
+import { Switch, Route, useLocation } from 'react-router-dom';
 
 function App() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [menu, setMenu] = useAtom(menuAtom);
+    const location = useLocation();
+
+    useEffect(() => {
+        activateMenu(location.pathname, menu, setMenu);
+    }, [location]);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     }
 
     return (
-        <div className='body-container text-gray-600 font-nunito grid md:grid-cols-4'>
-
+        <div className='body-container text-gray-600 font-sans grid md:grid-cols-4'>
             <Navbar
                 isMenuOpen={isMenuOpen}
                 toggleMenu={toggleMenu}
             />
+            <main className='px-6 md:px-16 py-6 bg-gray-100 md:col-span-3 min-h-screen'>
+                <Switch>
+                    <Route exact path='/'
+                        render={(props) => {
+                            return <Home {...props} />
+                        }}
+                    />
 
-            <main className='px-6 md:px-16 py-6 bg-gray-100 md:col-span-3'>
-                <Account />
-                <Header />
 
-                <div>
-                    <Latest />
-                    <Popular />
+                    <Route path='/about'
+                        render={(props) => {
+                            return <About {...props} />
+                        }}
+                    />
+                    <Route path='/contact'
+                        render={(props) => {
+                            return <Contact {...props} />
+                        }}
+                    />
+                    <Route path='/login'
+                        render={(props) => {
+                            return <Login {...props} />
+                        }}
+                    />
 
-                    <div className='flex justify-center mt-5'>
-                        <div className='btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300 tracking-widest'>
-                            Load more
-                        </div>
-                    </div>
-                </div>
+                    <Route path='/signup'
+                        render={(props) => {
+                            return <Signup {...props} />
+                        }}
+                    />
+                    <Route path='/product/:id'
+                        render={(props) => {
+                            return <Product {...props} />
+                        }}
+                    />
+                </Switch>
             </main>
         </div>
     );

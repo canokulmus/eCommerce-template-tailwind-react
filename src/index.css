@@ -26,3 +26,6 @@
 .custom-icon1 {
   @apply w-5 inline-block;
 }
+nav .active {
+  @apply border-primary font-extrabold text-primary;
+}
