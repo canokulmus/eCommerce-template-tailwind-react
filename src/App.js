@@ -22,6 +22,7 @@ function App() {
 
     useEffect(() => {
         activateMenu(location.pathname, menu, setMenu);
+        setIsMenuOpen(false);
     }, [location]);
 
     const toggleMenu = () => {
