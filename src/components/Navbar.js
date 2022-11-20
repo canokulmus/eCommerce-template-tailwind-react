@@ -13,7 +13,9 @@ const Navbar = ({ isMenuOpen, toggleMenu }) => {
             <nav className='text-right'>
                 <div className="flex justify-between items-center">
                     <h1 className='font-bold uppercase p-4 border-b border-gray-100'>
-                        <a href="/" className='text-primary text-4xl'>CO-Tech</a>
+                        <a href="/">
+                            <img src="logo2.png" className=' w-52' alt="CO-Tech Logo" />
+                        </a>
                     </h1>
                     <div className="px-4 cursor-pointer md:hidden" onClick={toggleMenu}>
                         <svg className="w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
