@@ -44,7 +44,7 @@ const AccountForm = ({ type }) => {
 
 
                         <div className="flex justify-center my-6">
-                            <button className=" rounded-full  p-3 w-full sm:w-56   bg-gradient-to-r from-sky-600  to-teal-300 text-white text-lg font-semibold ">
+                            <button className=" rounded-full  p-3 w-full sm:w-56 bg-gradient-to-r from-slate-600 to-teal-300 text-white text-lg font-semibold ">
                                 {type === 'signup' ? 'Sign Up' : 'Login'}
                             </button>
                         </div>
