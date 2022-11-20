@@ -2,7 +2,7 @@ import React from 'react'
 
 const Account = () => {
     return (
-        <div className='flex justify-center md:justify-end'>
+        <div className='flex justify-center hidden md:block md:justify-end'>
             <a href="#" className='btn btn-custom1 text-primary transition ease-out duration-500'>
                 Log in
             </a>

@@ -6,7 +6,6 @@ import Popular from "../components/Popular"
 
 const Home = () => {
     return (
-
         <>
             <Account />
             <Header header={{ main: "Products", sub: "For Tech Geeks" }} />
@@ -18,7 +17,6 @@ const Home = () => {
                 </div>
             </div>
         </>
-
     )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = ({ header }) => {
     return (
-        <header>
+        <header className='mt-3'>
 
             {header &&
                 <>
